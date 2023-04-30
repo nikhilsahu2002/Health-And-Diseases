@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Test',
+    'djongo',
 ]
 
 MIDDLEWARE = [
@@ -81,8 +82,8 @@ WSGI_APPLICATION = 'Major_Project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'HealthAndDisease',
     }
 }
 
