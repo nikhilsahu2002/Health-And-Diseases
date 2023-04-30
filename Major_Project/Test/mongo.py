@@ -1,8 +1,8 @@
 import pymongo
 
 client = pymongo.MongoClient('mongodb://localhost:27017/')
-db = client['your_database_name']
-collection = db['your_collection_name']
+db = client['HealthAndDisease']
+collection = db['Project']
 
 
 def get_data():
