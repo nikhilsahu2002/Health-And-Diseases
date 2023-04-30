@@ -7,7 +7,6 @@ collection = db['Project']
 
 def get_data():
     data = []
-    for item in collection.find_one({"Symptom_1":
-" headache"}):
+    for item in collection.find_one({"Symptom_1":" headache"}):
         data.append(item)
     return data
