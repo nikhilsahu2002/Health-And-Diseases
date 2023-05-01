@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from . import mongo
+from .models import persion
 # Create your views here.
 def home(request):
-    data =mongo.get_data()
+    data =persion.get()
     return render(request,'index.html',{'data':data})
