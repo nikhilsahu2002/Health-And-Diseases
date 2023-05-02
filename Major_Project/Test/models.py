@@ -17,32 +17,22 @@ class persion(models.Model):
         return self.name
     
 class dataset(models.Model):
-    _id=models.CharField(max_length=255,)
-    Disease=models.CharField(max_length=255)
-    Symptom_1=models.CharField(max_length=255)
-    Symptom_2=models.CharField(max_length=255)
-    Symptom_3=models.CharField(max_length=255)
-    Symptom_4=models.CharField(max_length=255)
-    Symptom_5=models.CharField(max_length=255)
-    Symptom_6=models.CharField(max_length=255)
-    Symptom_7=models.CharField(max_length=255)
-    Symptom_8=models.CharField(max_length=255)
-    Symptom_9=models.CharField(max_length=255)
-    Symptom_10=models.CharField(max_length=255)
-    Symptom_11=models.CharField(max_length=255)
-    Symptom_12=models.CharField(max_length=255)
-    Symptom_13=models.CharField(max_length=255)
-    Symptom_14=models.CharField(max_length=255)
-    Symptom_15=models.CharField(max_length=255)
-    Symptom_16=models.CharField(max_length=255)
-    Symptom_17=models.CharField(max_length=255)
-
-class meta:
-    db_table='project'
-    app_lable='Test'
-    DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'HealthAndDisease',
-    }
-}
+    _id= models.IntegerField()
+    Disease=models.CharField(max_length=255,default=' ')
+    Symptom_1=models.CharField(max_length=255,default=' ')
+    Symptom_2=models.CharField(max_length=255,default=' ')
+    Symptom_3=models.CharField(max_length=255,default=' ')
+    Symptom_4=models.CharField(max_length=255,default=' ')
+    Symptom_5=models.CharField(max_length=255,default=' ')
+    Symptom_6=models.CharField(max_length=255,default=' ')
+    Symptom_7=models.CharField(max_length=255,default=' ')
+    Symptom_8=models.CharField(max_length=255,default=' ')
+    Symptom_9=models.CharField(max_length=255,default=' ')
+    Symptom_10=models.CharField(max_length=255,default=' ')
+    Symptom_11=models.CharField(max_length=255,default=' ')
+    Symptom_12=models.CharField(max_length=255,default=' ')
+    Symptom_13=models.CharField(max_length=255,default=' ')
+    Symptom_14=models.CharField(max_length=255,default=' ')
+    Symptom_15=models.CharField(max_length=255,default=' ')
+    Symptom_16=models.CharField(max_length=255,default=' ')
+    Symptom_17=models.CharField(max_length=255,default=' ')
