@@ -15,3 +15,24 @@ class persion(models.Model):
 
     def __str__(self):
         return self.name
+    
+class dataset(models.Model):
+    _id=models.models.CharField(max_length=255)
+    Disease=models.CharField(max_length=255)
+    Symptom_1=models.CharField(max_length=255)
+    Symptom_2=models.CharField(max_length=255)
+    Symptom_3=models.CharField(max_length=255)
+    Symptom_4=models.CharField(max_length=255)
+    Symptom_5=models.CharField(max_length=255)
+    Symptom_6=models.CharField(max_length=255)
+    Symptom_7=models.CharField(max_length=255)
+    Symptom_8=models.CharField(max_length=255)
+    Symptom_9=models.CharField(max_length=255)
+    Symptom_10=models.CharField(max_length=255)
+    Symptom_11=models.CharField(max_length=255)
+    Symptom_12=models.CharField(max_length=255)
+    Symptom_13=models.CharField(max_length=255)
+    Symptom_14=models.CharField(max_length=255)
+    Symptom_15=models.CharField(max_length=255)
+    Symptom_16=models.CharField(max_length=255)
+    Symptom_17=models.CharField(max_length=255)
