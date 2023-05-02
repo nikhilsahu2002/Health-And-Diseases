@@ -17,7 +17,6 @@ class persion(models.Model):
         return self.name
     
 class dataset(models.Model):
-    _id= models.IntegerField()
     Disease=models.CharField(max_length=255,default=' ')
     Symptom_1=models.CharField(max_length=255,default=' ')
     Symptom_2=models.CharField(max_length=255,default=' ')
