@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import persion
+from .models import dataset
 # Create your views here.
 def home(request):
-    data =persion.get()
+    data = dataset.objects.name('Fungal infection')
     return render(request,'index.html',{'data':data})
