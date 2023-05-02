@@ -17,7 +17,7 @@ class persion(models.Model):
         return self.name
     
 class dataset(models.Model):
-    _id=models.models.CharField(max_length=255)
+    _id=models.CharField(max_length=255,)
     Disease=models.CharField(max_length=255)
     Symptom_1=models.CharField(max_length=255)
     Symptom_2=models.CharField(max_length=255)
@@ -36,3 +36,13 @@ class dataset(models.Model):
     Symptom_15=models.CharField(max_length=255)
     Symptom_16=models.CharField(max_length=255)
     Symptom_17=models.CharField(max_length=255)
+
+class meta:
+    db_table='project'
+    app_lable='Test'
+    DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'HealthAndDisease',
+    }
+}
