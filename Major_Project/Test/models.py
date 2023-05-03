@@ -1,3 +1,4 @@
+
 from djongo import models
 
 
@@ -35,3 +36,6 @@ class dataset(models.Model):
     Symptom_15=models.CharField(max_length=255,default=' ')
     Symptom_16=models.CharField(max_length=255,default=' ')
     Symptom_17=models.CharField(max_length=255,default=' ')
+
+
+

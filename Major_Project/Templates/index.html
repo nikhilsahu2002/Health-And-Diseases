@@ -7,33 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-        <h1>Select Your Option</h1>
-         <select class="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-
-          {% for i in data %}
-          <li>
-            {{i}}
-          </li>
-          {% endfor %}
-        <h1>Select Your Option</h1>
-         <select class="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        <h1>Select Your Option</h1>
-         <select class="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+			{% comment %} {% for item in data %}
+			<tr>
+				<td>{{ item.Disease }}</td>
+				<td>{{ item.Symptom_1 }}</td>
+				<td>{{ item.Symptom_2 }}</td>
+				<td>{{ item.Symptom_3 }}</td>
+			</tr>
+			{% empty %}
+			<tr>
+				<td colspan="4">No data found</td>
+			</tr>
+			{% endfor %}
+ {% endcomment %}
+ <form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Submit</button>
+</form>
      
 </body>
 </html>

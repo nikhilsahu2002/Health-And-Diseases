@@ -19,4 +19,5 @@ from Test import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/',views.home, name='Home'),
+    path('', views.disease_finder, name='disease_finder'),
 ]
